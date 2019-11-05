@@ -1,0 +1,10 @@
+#!/bin/bash
+kubectl label nodes kubox-node-1.cern.ch nodeApp=ldap
+kubectl label nodes kubox-node-2.cern.ch nodeApp=eos-mgm
+kubectl label nodes kubox-node-3.cern.ch nodeApp=eos-fst1
+kubectl label nodes kubox-node-4.cern.ch nodeApp=eos-fst2
+kubectl label nodes kubox-node-5.cern.ch nodeApp=cernbox
+kubectl label nodes kubox-node-6.cern.ch nodeApp=cernboxgateway
+kubectl label nodes kubox-node-7.cern.ch nodeApp=swan
+kubectl label nodes kubox-node-8.cern.ch nodeApp=eos-mq
+kubectl get nodes --show-labels

@@ -1,0 +1,14 @@
+#!/bin/bash
+#https://www.howtoforge.com/nfs-server-and-client-on-centos-7
+
+ssh root@kubox-master mount -t nfs sft-nfs:/var/nfsshare /mnt/
+for i in $(seq 1 1 9);
+do
+	ssh root@kubox-node-$i mount -t nfs sft-nfs:/var/nfsshare /mnt/
+done
+
+for i in $(seq 1 1 9);
+do
+	ssh root@kubox-node-$i mkdir /var/kubeVolumes/
+	ssh root@kubox-node-$i mount -t nfs sft-nfs:/var/nfsshare_logs /var/kubeVolumes/
+done
