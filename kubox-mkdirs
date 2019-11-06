@@ -1,0 +1,19 @@
+mkdir -p /mnt/ldap/userdb
+mkdir -p /mnt/ldap/config
+mkdir -p /mnt/eos_namespace
+mkdir -p /mnt/fst_userdata
+mkdir -p /mnt/cbox_shares_db/cbox_data
+mkdir -p /mnt/cbox_shares_db/cbox_MySQL
+mkdir -p /mnt/jupyterhub_data
+
+mkdir -p /var/kubeVolumes/mgm_logs
+mkdir -p /var/kubeVolumes/fst_logs
+mkdir -p /var/kubeVolumes/mq_logs
+mkdir -p /mnt/cbox_shares_db/cbox_data
+mkdir -p /var/kubeVolumes/httpd_logs
+mkdir -p /var/kubeVolumes/shibboleth_logs
+mkdir -p /var/kubeVolumes/cboxgateway_logs	
+mkdir -p /var/kubeVolumes/jupyterhub_logs
+mkdir -p /var/kubeVolumes/httpd_logs
+mkdir -p /var/kubeVolumes/shibboleth_logs
+mkdir -p /var/kubeVolumes/eosfuse_logs
